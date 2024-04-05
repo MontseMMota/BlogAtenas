@@ -1,4 +1,5 @@
 @import "../abstracts/variables";
+@import "../abstracts/functions";
 
 
 @font-face {
@@ -34,10 +35,32 @@ h1 {
   
 }
 
+
 h2 {
   font-size: heading-size(2);
   font-weight: bold;
   color: $color-secondary;
+}
+
+
+@media (min-width: 768px) {
+  h1 {
+    font-size: heading-size(1) * 1.5; // Aumentar el tamaño de fuente para H1 en dispositivos más grandes
+  }
+
+  h2 {
+    font-size: heading-size(2) * 1.5; // Aumentar el tamaño de fuente para H2 en dispositivos más grandes
+  }
+}
+
+@media (min-width: 998px) {
+  h1 {
+    font-size: heading-size(1) * 2; // Aumentar el tamaño de fuente para H1 en dispositivos más grandes
+  }
+
+  h2 {
+    font-size: heading-size(2) * 2; // Aumentar el tamaño de fuente para H2 en dispositivos más grandes
+  }
 }
 
 p {
