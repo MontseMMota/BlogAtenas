@@ -1,0 +1,11 @@
+@import "../abstracts/variables";
+
+
+.button {
+  @include button-styles;
+
+  &:hover {
+    background-color: $color-accent;
+
+  }
+}

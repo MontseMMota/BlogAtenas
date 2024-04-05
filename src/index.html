@@ -1,27 +1,145 @@
 <!DOCTYPE html>
 
 <html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width">
-    <link rel="stylesheet" type="text/css" href="./assets/styles/main.scss"><!-- do not remove this line! -->
-    <title>UOC Boilerplate</title>
-  </head>
-  <body>
-    <div class="uoc-container">
-      <picture>
-        <source srcset="./assets/images/logo.png?as=webp&width=350" type="image/webp" />
-        <img src="./assets/images/logo.png?width=350" alt="Universitat Oberta de Catalunya" class="uoc-logo" />
-      </picture>
-      <h1 class="uoc-title">Hello, UOC!</h1>
-      <p>
-        This is a starter template for the Advanced HTML and CSS Tools courses
-        from the Master's Program in Multimedia Applications and the Master's
-        Program in Web App and Website Development at the Universitat Oberta de
-        Catalunya.
-      </p>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="./assets/styles/main.scss">
+  <title>Atenas</title>
+</head>
+
+<header class="header">
+  <h1 class="header__title"><i class="fas fa-university"></i>Atenas<i class="fas fa-university"></i></h1>
+  <h2 class="header__subtitle">Un viaje a través de la mitología y la filosofía</h2>
+  <nav class="header__nav">
+    <ul class="nav__list">
+      <li class="nav__item"><a href="#" class="nav__link">Historia</a></li>
+      <li class="nav__item"><a href="#" class="nav__link">Filosofía</a></li>
+      <li class="nav__item"><a href="#" class="nav__link">Mitología</a></li>
+      <li class="nav__item"><a href="#" class="nav__link">Arquitectura</a></li>
+      <li class="nav__item"><a href="#" class="nav__link">Gastronomía</a></li>
+      <li class="nav__item"><a href="#" class="nav__link">Naturaleza</a></li>
+    </ul>
+  </nav>
+</header>
+
+
+<section class="gallery-section">
+  <div class="gallery">
+    <div class="gallery__item">
+      <div class="card">
+        <img src="assets/images/image1.jpg" alt="Partenón" class="gallery__image">
+        <div class="card__content">
+          <h3 class="card__title">Partenón</h3>
+          <p class="card__description">El Partenón es un antiguo templo 
+          dedicado a la diosa Atenea, construido en mármol en la Acrópolis 
+          de Atenas. Es uno de los monumentos más famosos del mundo antiguo 
+          y un símbolo duradero de la grandeza de la civilización griega.</p>
+          <button class="button button--ver-mas">Ver más</button>
+        </div>
+      </div>
     </div>
-    <include src="./views/footer.html"></include>
-    <script type="module" src="./assets/scripts/main.js"></script><!-- do not remove this line! -->
-  </body>
+  </div>
+
+  <div class="gallery">
+    <div class="gallery__item">
+      <div class="card">
+        <img src="assets/images/image2.jpg" alt="Ágora" class="gallery__image">
+        <div class="card__content">
+          <h3 class="card__title">Ágora de Atenas</h3>
+          <p class="card__description">La Ágora de Atenas era el centro de 
+          la vida pública en la antigua Atenas, donde se llevaban a cabo 
+          debates, reuniones y actividades comerciales..</p>
+          <button class="button button--ver-mas">Ver más</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="gallery">
+    <div class="gallery__item">
+      <div class="card">
+        <img src="assets/images/image3.jpg" alt="Museo de la Acrópolis" class="gallery__image">
+        <div class="card__content">
+          <h3 class="card__title">Museo de la Acrópolis</h3>
+          <p class="card__description">El Museo de la Acrópolis 
+          de Atenas alberga una impresionante colección de artefactos 
+          antiguos encontrados en la Acrópolis, incluyendo esculturas y frisos del Partenón..</p>
+          <button class="button button--ver-mas">Ver más</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="gallery">
+    <div class="gallery__item">
+      <div class="card">
+        <img src="assets/images/image4.jpg" alt="Prisión de Sócrates" class="gallery__image">
+        <div class="card__content">
+          <h3 class="card__title">Prisión de Sócrates</h3>
+          <p class="card__description">La prisión de Sócrates es el lugar donde 
+          el filósofo griego Sócrates pasó sus últimos días antes de su ejecución, 
+          mientras continuaba discutiendo sus ideas y enseñanzas con sus seguidores.</p>
+          <button class="button button--ver-mas">Ver más</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="gallery">
+    <div class="gallery__item">
+      <div class="card">
+        <img src="assets/images/image5.jpg" alt="Observatorio" class="gallery__image">
+        <div class="card__content">
+          <h3 class="card__title">Observatorio Nacional</h3>
+          <p class="card__description">El Observatorio Nacional de Atenas es una institución científica 
+          dedicada al estudio de la astronomía y la meteorología, que ha contribuido al avance
+          del conocimiento científico desde su fundación en 1842..</p>
+          <button class="button button--ver-mas">Ver más</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="gallery">
+    <div class="gallery__item">
+      <div class="card">
+        <img src="assets/images/image6.jpg" alt="Odeón de Herodes Áticon" class="gallery__image">
+        <div class="card__content">
+          <h3 class="card__title">Odeón de Herodes Áticon</h3>
+          <p class="card__description">El Odeón de Herodes Ático es un 
+          antiguo teatro romano situado en la ladera sur de la Acrópolis, 
+          conocido por su arquitectura impresionante y su acústica excepcional.</p>
+          <button class="button button--ver-mas">Ver más</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="gallery">
+    <div class="gallery__item">
+      <div class="card">
+        <img src="assets/images/image7.jpg" alt="Jardín Nacional de Atenas" class="gallery__image">
+        <div class="card__content">
+          <h3 class="card__title">Jardín Nacional de Atenas</h3>
+          <p class="card__description">El Jardín Nacional es un parque 
+          público en el centro de Atenas, con hermosos jardines, estatuas y 
+          monumentos históricos, que ofrece un refugio tranquilo en medio de la ciudad.</p>
+          <button class="button button--ver-mas">Ver más</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+</section>
+
+
+
+
+<include src="./views/footer.html"></include>
+<script type="module" src="./assets/scripts/main.js"></script>
+</body>
+
 </html>

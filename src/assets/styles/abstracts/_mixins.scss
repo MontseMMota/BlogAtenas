@@ -1,0 +1,14 @@
+@mixin button-styles {
+    // Estilos comunes para todos los botones
+    padding: 10px 20px;
+    border: 0;
+    border-radius: 5px;
+    cursor: pointer;
+  
+    // Estilos específicos para el botón "Ver más"
+    &.button--ver-mas {
+      background-color: $color-primary;
+      color: $color-background; 
+      font-family: $font-family-serif;
+    }
+  }     
